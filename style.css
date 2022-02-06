@@ -21,7 +21,6 @@ body{
     min-height: 100vh;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
-
 }
 
 
@@ -36,21 +35,16 @@ body{
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0px 9px 17px 8px hsl(217, 54%, 10%);
-
-
 }
 
 .imgbox{
     position: relative;
-    
 }
 .ntfimg{
     width: 100%;
     align-items: center;
     margin: auto;
     border-radius: 20px;
-    
-
 }
 
 .hoverimg{
@@ -63,7 +57,6 @@ body{
     border-radius: 20px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    
 }
 
 .hoverimg img{
@@ -71,17 +64,12 @@ body{
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-
-   
 }
 
 .hoverimg:hover{
    opacity: 1;
    cursor: pointer;
 }
-
-
 
 .box h3{
     text-align: left;
@@ -90,20 +78,20 @@ body{
 .box h3 a{
     color: var(--white);
     text-decoration: none;
-    font-size: 18px;
     font-weight: 600;
+    transition: font-size 0.1s ease-in;
 }
 
 .box h3 a:hover{
     color: var(--cyan);
     font-weight: 600;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .box p{
     color:var(--softblue);
     font-weight: 300;
-    font-size: 12px;
+    font-size: 16px;
     text-align: left;
     margin: 10px 0 ;
 }
@@ -121,7 +109,7 @@ ul li{
     display: flex;
     align-items: center;
     color:var(--softblue);
-    font-size: 12px;
+    font-size: 16px;
 
 }
 
@@ -132,16 +120,11 @@ ul li img{
 ul li:first-child{
     color: var(--cyan);
     font-weight: 300;
-    
 }
 
 .footer{
     display: flex;
     margin: 15px 0;
-    
-   
-    
-
 }
 
 .profile {
