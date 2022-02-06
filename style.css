@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%)
+}
+
+body{
+    background-color: var(--mainBG);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+
+}
+
+
+
+.box{
+    background-color: var(--cardBG);
+    text-align: center;
+    width: 40%;
+    height: auto;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 9px 17px 8px hsl(217, 54%, 10%);
+
+
+}
+
+.imgbox{
+    position: relative;
+    
+}
+.ntfimg{
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    border-radius: 20px;
+    
+
+}
+
+.hoverimg{
+    background-color: hsl(178, 100%, 50%, 30%);
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    z-index: 999;
+    top:0;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+}
+
+.hoverimg img{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+   
+}
+
+.hoverimg:hover{
+   opacity: 1;
+   cursor: pointer;
+}
+
+
+
+.box h3{
+    text-align: left;
+    margin-top: 10px;
+}
+.box h3 a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box h3 a:hover{
+    color: var(--cyan);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.box p{
+    color:var(--softblue);
+    font-weight: 300;
+    font-size: 12px;
+    text-align: left;
+    margin: 10px 0 ;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line) ;
+}
+
+ul li{
+    display: flex;
+    align-items: center;
+    color:var(--softblue);
+    font-size: 12px;
+
+}
+
+ul li img{
+    padding-right: 5px;
+}
+
+ul li:first-child{
+    color: var(--cyan);
+    font-weight: 300;
+    
+}
+
+.footer{
+    display: flex;
+    margin: 15px 0;
+    
+   
+    
+
+}
+
+.profile {
+    width: 35px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    margin-right: 10px;
+}
+
+.footer p span{
+    
+    color: var(--white);
+}
+   
+.footer p span:hover{
+    color:var(--cyan);
+    cursor: pointer;
+}
+
+
+@media (max-width:40em) {
+    .box{
+        width: 250px;
+        margin: 0 auto 1rem;
+    }
+}
